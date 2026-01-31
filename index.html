@@ -2,11 +2,98 @@
 <html>
   <head>
     <title>JP Software Engineer</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website of Jan Pavlásek.">
   </head>
   <body>
+    <h1>Jan Pavlásek</h1>
+
     <!-- navigation -->
+    <nav>
+      <ul class="navigation-bar">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+    
     <!-- about me section -->
+    <article id="about-me">
+      <h2>About Me</h2>
+      <p>Hi, my name is Jan Pavlásek and I am a Software Developer based in Prague.</p>
+      <p>I study Software Engineering on Faculty of Information Technology on CTU.</p>
+      <p>There is the list of technologies that I am familiar with and can work with.</p>
+      <div class="cards list-of-technologies">
+        <div class="card languages">
+          <h3>Programming Languages</h3> 
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>C++</li>
+          </ul> 
+        </div>
+        <div class="card frameworks">
+          <h3>Frameworks</h3> 
+          <ul>
+            <li>Django</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="card databases">
+          <h3>Databases</h3> 
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>CockroachDB</li>
+          </ul>
+        </div>
+        <div class="card tools">
+          <h3>Databases</h3> 
+          <ul>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="card version-control">
+          <h3>Version Control</h3> 
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
     <!-- projects showcase -->
+    <article id="projects">
+      <h2>Projects Showcase</h2>
+      <div class="cards list-of-projects">
+        <div class="card protect-the-egg">
+          <h3>Protect The Egg!</h3>
+          <p>Protect The Egg is a game written in Ruby using Gosu framework.</p>
+        </div>
+        <div class="card darts">
+          <h3>Darting Champion</h3>
+          <p>Darting Champion is a web application written in Django. It uses PostgreSQL as a database and lets you play darts against bots or multiplayer with your friend.</p>
+        </div>
+        <div class="card kajinho">
+          <h3>Nihongo App!</h3>
+          <p>Nihongo is a web application written in Django.</p>
+        </div>
+      </div>
+    </article>
+
     <!-- contacts -->
+    <footer id="contact-me">
+      <h3>Contact Me</h3>
+      <ul>
+        <li>LinkedIN: </li>
+        <li>Instagram: </li>
+        <li>GitHub</li>
+      </ul>
+    </footer>
   </body>
 </html>

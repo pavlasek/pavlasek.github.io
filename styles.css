@@ -1,7 +1,66 @@
 /* reset of styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+/* global styling */
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	line-height: 1.6;
+	color: #111;
+	background-color: #fafafa;
+	padding: 1rem;
+}
+
+h1, h2, h3 {
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+nav, article, footer {
+	margin-bottom: 3rem;
+}
+
+/* cards styling */
+.cards {
+	display: flex;
+	gap: 1rem;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	padding: 1rem;
+}
+
+.card {
+	background-color: white;
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+	width: 280px;
+	flex-shrink: 0;
+	scroll-snap-type: start;
+
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 768px) {
+  .cards {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

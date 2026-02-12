@@ -10,17 +10,30 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header class="header">
+      <div class="logo">JP Software Engineer</div>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- navigation -->
+      <nav class="nav" id="nav">
+        <ul class="navigation-bar">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    
+
     <h1>Jan Pavlásek</h1>
 
-    <!-- navigation -->
-    <nav>
-      <ul class="navigation-bar">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </nav>
-    
     <!-- about me section -->
     <article id="about-me">
       <h2>About Me</h2>
@@ -98,4 +111,13 @@
       </ul>
     </footer>
   </body>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
 </html>

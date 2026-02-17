@@ -62,6 +62,10 @@ header {
 	gap: 1rem;
 }
 
+.navigation-bar li {
+	margin: 0px auto;
+}
+
 
 
 /* global styling */
